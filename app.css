@@ -13,6 +13,11 @@
 }
 
 body {
+  background: var(--primary-white);
+  border: 25px solid #ffffeb;
+}
+
+.top-gradient {
   background: linear-gradient(
     111.4deg,
     rgb(209, 231, 235) 7.4%,
@@ -20,7 +25,8 @@ body {
     rgb(255, 159, 122) 82.6%,
     rgb(255, 109, 58) 100.2%
   );
-  border: 25px solid #ffffeb;
+  padding: 10px;
+  max-width: 100%;
 }
 
 .logo {
@@ -102,6 +108,7 @@ small {
   background: var(--primary-white);
   display: flex;
   justify-content: center;
+  margin: 0;
   padding: 50px 0;
 }
 
@@ -117,6 +124,64 @@ small {
 .code-container i:hover {
   cursor: pointer;
   transform: scale(1.5);
+  transition: all 500ms ease-in-out;
+}
+
+.projects-container {
+  background: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.projects-headline {
+  background: var(--primary-white);
+  font-family: var(--font-family-heading);
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.projects-container .row {
+  gap: 50px;
+  text-align: center;
+}
+
+.project-image {
+  max-width: 400px;
+  max-height: 200px;
+  margin: 30px;
+}
+
+.project-headline {
+  font-family: var(--font-family-paragraph);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-paragraph {
+  font-family: var(--font-family-paragraph);
+}
+
+.project-buttons {
+  background: var(--primary-black);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  color: var(--primary-white);
+  font-family: var(--font-family-paragraph);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.75;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.project-buttons:hover {
+  opacity: 1;
+  cursor: pointer;
   transition: all 500ms ease-in-out;
 }
 
