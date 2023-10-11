@@ -5,11 +5,11 @@
 
 :root {
   --primary-white: #ffffeb;
-  --primary-dark: #000000;
-  --primary-font-headline: "Tangerine", cursive;
-  --primary-font-description: "Syne Mono", monospace;
-  --primary-font-paragraph: "Red Hat Display", sans-serif;
-  --primary-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --primary-black: #000000;
+  --font-family-heading: "Tangerine", cursive;
+  --font-family-sub-heading: "Syne Mono", monospace;
+  --font-family-paragraph: "Red Hat Display", sans-serif;
+  --box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 .logo:hover {
-  cursor: pointer;
+  cursor: context-menu;
   opacity: 0.5;
   transition: all 500ms ease-in-out;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-nav {
-  font-family: var(--primary-font-paragraph);
+  font-family: var(--font-family-paragraph);
   font-size: 15px;
   font-weight: 500;
   gap: 30px;
@@ -63,21 +63,21 @@ body {
 }
 
 main {
-  margin: 135px 0 135px;
+  margin: 135px 0;
 }
 
 .main-headline {
   color: var(--primary-white);
-  font-family: var(--primary-font-description);
+  font-family: var(--font-family-sub-heading);
   font-size: 30px;
-  margin-right: 35px;
+  margin-right: 25px;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .main-description {
   color: var(--primary-white);
-  font-family: var(--primary-font-headline);
+  font-family: var(--font-family-heading);
   font-size: 75px;
   line-height: 0.8;
   text-align: center;
@@ -85,13 +85,13 @@ main {
 
 .main-headline:hover,
 .main-description:hover {
-  cursor: pointer;
+  cursor: context-menu;
   opacity: 0.5;
   transition: all 500ms ease-in-out;
 }
 
 span {
-  color: black;
+  color: var(--primary-black);
 }
 
 small {
@@ -102,7 +102,7 @@ small {
   background: var(--primary-white);
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 .code-container .row {
