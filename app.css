@@ -26,7 +26,10 @@ body {
     rgb(255, 109, 58) 100.2%
   );
   padding: 10px;
-  max-width: 100%;
+}
+
+.top-gradient-white {
+  padding: 10px;
 }
 
 .logo {
@@ -53,6 +56,15 @@ body {
   font-size: 15px;
   font-weight: 500;
   gap: 30px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.about-navbar-nav {
+  font-family: var(--font-family-paragraph);
+  font-size: 15px;
+  font-weight: 500;
+  gap: 49px;
   text-align: right;
   text-transform: uppercase;
 }
@@ -137,8 +149,8 @@ small {
 
 .projects-headline {
   background: var(--primary-white);
-  font-family: var(--font-family-heading);
-  font-size: 50px;
+  font-family: var(--font-family-sub-heading);
+  font-size: 30px;
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -186,10 +198,6 @@ small {
   transition: all 500ms ease-in-out;
 }
 
-.main-about {
-  margin: 98px 0;
-}
-
 .about-container {
   display: flex;
   justify-content: center;
@@ -213,25 +221,29 @@ small {
   margin-bottom: 25px;
 }
 
+.about-headline:hover {
+  cursor: context-menu;
+  opacity: 0.5;
+  transition: all 500ms ease-in-out;
+}
+
 .about-paragraph {
   font-family: var(--font-family-paragraph);
   text-transform: lowercase;
   margin-bottom: 25px;
+  opacity: 0.75;
+}
+
+.about-paragraph:hover {
+  cursor: context-menu;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
 }
 
 .profile-image {
   max-width: 325px;
   border-radius: 50% 50% 0 0;
   box-shadow: var(--box-shadow);
-}
-
-.about-navbar-nav {
-  font-family: var(--font-family-paragraph);
-  font-size: 15px;
-  font-weight: 500;
-  gap: 50px;
-  text-align: right;
-  text-transform: uppercase;
 }
 
 .about-nav-link {
