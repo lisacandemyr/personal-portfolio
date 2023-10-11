@@ -18,17 +18,11 @@ body {
 }
 
 .top-gradient {
-  background: linear-gradient(
-    111.4deg,
-    rgb(209, 231, 235) 7.4%,
-    rgb(238, 219, 199) 51.4%,
-    rgb(255, 159, 122) 82.6%,
-    rgb(255, 109, 58) 100.2%
-  );
+  background: linear-gradient(111.4deg, #f6e7b5 0%, #e1aa54 50%, #c25528 100%);
   padding: 10px;
 }
 
-.top-gradient-white {
+.top-space {
   padding: 10px;
 }
 
@@ -92,6 +86,7 @@ main {
   margin-right: 25px;
   margin-bottom: 15px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .main-description {
@@ -100,6 +95,7 @@ main {
   font-size: 75px;
   line-height: 0.8;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .main-headline:hover,
@@ -154,6 +150,7 @@ small {
   margin: 0;
   padding: 10px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .projects-container .row {
@@ -186,10 +183,11 @@ small {
   font-family: var(--font-family-paragraph);
   font-size: 12px;
   font-weight: 500;
-  text-transform: uppercase;
+  margin: 10px;
   opacity: 0.75;
   padding: 10px 15px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .buttons:hover {
@@ -219,6 +217,7 @@ small {
   font-size: 50px;
   line-height: 0.8;
   margin-bottom: 25px;
+  text-transform: lowercase;
 }
 
 .about-headline:hover {
@@ -229,7 +228,6 @@ small {
 
 .about-paragraph {
   font-family: var(--font-family-paragraph);
-  text-transform: lowercase;
   margin-bottom: 25px;
   opacity: 0.75;
 }
