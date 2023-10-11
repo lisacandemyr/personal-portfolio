@@ -59,6 +59,7 @@ body {
 
 .nav-link {
   color: var(--primary-white);
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -165,7 +166,7 @@ small {
   font-family: var(--font-family-paragraph);
 }
 
-.project-buttons {
+.buttons {
   background: var(--primary-black);
   border-radius: 5px;
   box-shadow: var(--box-shadow);
@@ -179,10 +180,80 @@ small {
   text-decoration: none;
 }
 
-.project-buttons:hover {
+.buttons:hover {
   opacity: 1;
   cursor: pointer;
   transition: all 500ms ease-in-out;
+}
+
+.main-about {
+  margin: 98px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-container .row {
+  align-items: center;
+  text-align: center;
+  margin: 0 100px;
+}
+
+.about-container .col {
+  margin: 0 0 50px 0;
+}
+
+.about-headline {
+  color: var(--primary-black);
+  font-family: var(--font-family-heading);
+  font-size: 50px;
+  line-height: 0.8;
+  margin-bottom: 25px;
+}
+
+.about-paragraph {
+  font-family: var(--font-family-paragraph);
+  text-transform: lowercase;
+  margin-bottom: 25px;
+}
+
+.profile-image {
+  max-width: 325px;
+  border-radius: 50% 50% 0 0;
+  box-shadow: var(--box-shadow);
+}
+
+.about-navbar-nav {
+  font-family: var(--font-family-paragraph);
+  font-size: 15px;
+  font-weight: 500;
+  gap: 50px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.about-nav-link {
+  color: var(--primary-black);
+  text-decoration: none;
+}
+
+.about-nav-link:hover {
+  color: var(--primary-black);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 500ms ease-in-out;
+}
+
+.about-navbar {
+  margin: 20px 60px;
+}
+
+@media (max-width: 1150px) {
+  .about-headline {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 991.5px) {
@@ -190,11 +261,25 @@ small {
     gap: 5px;
     margin-top: 20px;
   }
+
+  .main-about {
+    margin: 25px 0;
+  }
+
+  .about-container .row {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 771.5px) {
   .main-description {
     font-size: 55px;
+  }
+}
+
+@media (max-width: 675px) {
+  .about-headline {
+    font-size: 30px;
   }
 }
 
