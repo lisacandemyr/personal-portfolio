@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Tangerine, serif;
+  src: url("Tangerine.otf");
+}
+
+:root {
+  --primary-white: #ffffeb;
+  --primary-dark: #000000;
+  --primary-font-headline: "Tangerine", cursive;
+  --primary-font-description: "Syne Mono", monospace;
+  --primary-font-paragraph: "Red Hat Display", sans-serif;
+  --primary-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: linear-gradient(
+    111.4deg,
+    rgb(209, 231, 235) 7.4%,
+    rgb(238, 219, 199) 51.4%,
+    rgb(255, 159, 122) 82.6%,
+    rgb(255, 109, 58) 100.2%
+  );
+  border: 25px solid #ffffeb;
+}
+
+.logo {
+  width: 40px;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 500ms ease-in-out;
+}
+
+.navbar {
+  margin: 20px 60px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  font-family: var(--primary-font-paragraph);
+  font-size: 15px;
+  font-weight: 500;
+  gap: 30px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: var(--primary-white);
+}
+
+.nav-link:hover {
+  color: var(--primary-white);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 500ms ease-in-out;
+}
+
+main {
+  margin: 135px 0 135px;
+}
+
+.main-headline {
+  color: var(--primary-white);
+  font-family: var(--primary-font-description);
+  font-size: 30px;
+  margin-right: 35px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main-description {
+  color: var(--primary-white);
+  font-family: var(--primary-font-headline);
+  font-size: 75px;
+  line-height: 0.8;
+  text-align: center;
+}
+
+.main-headline:hover,
+.main-description:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 500ms ease-in-out;
+}
+
+span {
+  color: black;
+}
+
+small {
+  font-size: 40px;
+}
+
+.code-container {
+  background: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.code-container .row {
+  gap: 75px;
+  text-align: center;
+}
+
+.code-container i {
+  font-size: 40px;
+}
+
+.code-container i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 500ms ease-in-out;
+}
