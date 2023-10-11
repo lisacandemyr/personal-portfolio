@@ -40,7 +40,7 @@ body {
 }
 
 .navbar {
-  margin: 20px 60px;
+  margin: 10px 50px;
 }
 
 .navbar-collapse {
@@ -189,5 +189,25 @@ small {
   .navbar-nav {
     gap: 5px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 771.5px) {
+  .main-description {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 584.5px) {
+  .main-headline {
+    font-size: 20px;
+  }
+
+  .main-description {
+    font-size: 35px;
+  }
+
+  small {
+    font-size: 25px;
   }
 }
