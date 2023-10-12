@@ -73,7 +73,8 @@ main {
   text-transform: lowercase;
 }
 
-.main-description {
+.main-description,
+.contact-headline {
   color: var(--primary-white);
   font-family: var(--font-family-heading);
   font-size: 75px;
@@ -148,7 +149,8 @@ small {
 }
 
 .preview-headline,
-.project-headline {
+.project-headline,
+.contact-description {
   font-family: var(--font-family-paragraph);
   font-size: 15px;
   font-weight: 600;
@@ -156,7 +158,8 @@ small {
 }
 
 .preview-paragraph,
-.project-paragraph {
+.project-paragraph,
+.contact-paragraph {
   font-family: var(--font-family-paragraph);
 }
 
@@ -219,6 +222,32 @@ small {
   max-width: 325px;
 }
 
+.contact-container i {
+  font-size: 40px;
+}
+
+.contact-container i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 500ms ease-in-out;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container .row {
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: var(--primary-black);
+}
+
 @media (max-width: 1150px) {
   .about-headline {
     font-size: 40px;
@@ -238,10 +267,15 @@ small {
   .about-container .row {
     flex-direction: column-reverse;
   }
+
+  .contact-container .row {
+    gap: 0px;
+  }
 }
 
 @media (max-width: 771.5px) {
-  .main-description {
+  .main-description,
+  .contact-headline {
     font-size: 55px;
   }
 }
@@ -257,7 +291,8 @@ small {
     font-size: 20px;
   }
 
-  .main-description {
+  .main-description,
+  .contact-headline {
     font-size: 35px;
   }
 
