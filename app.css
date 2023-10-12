@@ -138,6 +138,12 @@ small {
 
 .project-image {
   max-width: 300px;
+  box-shadow: var(--box-shadow);
+}
+
+.project-image:hover {
+  transform: scale(1.3);
+  transition: all 500ms ease-in-out;
 }
 
 .preview-headline,
@@ -173,7 +179,7 @@ small {
   transition: all 500ms ease-in-out;
 }
 
-projects-headline .about-container {
+.about-container {
   display: flex;
   justify-content: center;
 }
@@ -192,12 +198,14 @@ projects-headline .about-container {
   text-transform: lowercase;
 }
 
-.about-paragraph {
+.about-paragraph,
+.project-paragraph {
   font-family: var(--font-family-paragraph);
   opacity: 0.75;
 }
 
-.about-paragraph:hover {
+.about-paragraph:hover,
+.project-paragraph:hover {
   cursor: context-menu;
   opacity: 1;
   transform: scale(1.015);
