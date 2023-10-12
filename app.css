@@ -19,11 +19,6 @@ body {
 
 .top-gradient {
   background: linear-gradient(111.4deg, #f6e7b5 0%, #e1aa54 50%, #c25528 100%);
-  padding: 10px;
-}
-
-.top-space {
-  padding: 10px;
 }
 
 .logo {
@@ -32,10 +27,6 @@ body {
 
 .logo:hover {
   cursor: context-menu;
-}
-
-.navbar {
-  margin: 10px 50px;
 }
 
 .navbar-collapse {
@@ -48,7 +39,6 @@ body {
   font-size: 15px;
   font-weight: 500;
   gap: 30px;
-  text-align: right;
   text-transform: uppercase;
 }
 
@@ -80,8 +70,6 @@ main {
   color: var(--primary-white);
   font-family: var(--font-family-sub-heading);
   font-size: 30px;
-  margin: 0 25px 15px 0;
-  text-align: center;
   text-transform: lowercase;
 }
 
@@ -90,7 +78,6 @@ main {
   font-family: var(--font-family-heading);
   font-size: 75px;
   line-height: 0.8;
-  text-align: center;
   text-transform: lowercase;
 }
 
@@ -110,12 +97,10 @@ small {
 .code-container {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
 }
 
 .code-container .row {
   gap: 75px;
-  text-align: center;
 }
 
 .code-container i {
@@ -128,30 +113,34 @@ small {
   transition: all 500ms ease-in-out;
 }
 
+.preview-container,
 .projects-container {
   display: flex;
   justify-content: center;
 }
 
-.projects-headline {
+.previews-headline {
   font-family: var(--font-family-sub-heading);
   font-size: 30px;
   padding: 10px;
-  text-align: center;
   text-transform: lowercase;
 }
 
+.preview-container .row,
 .projects-container .row {
   gap: 50px;
-  text-align: center;
+}
+
+.preview-image {
+  max-width: 400px;
+  max-height: 200px;
 }
 
 .project-image {
-  max-width: 400px;
-  max-height: 200px;
-  margin: 30px;
+  max-width: 300px;
 }
 
+.preview-headline,
 .project-headline {
   font-family: var(--font-family-paragraph);
   font-size: 15px;
@@ -159,6 +148,7 @@ small {
   text-transform: uppercase;
 }
 
+.preview-paragraph,
 .project-paragraph {
   font-family: var(--font-family-paragraph);
 }
@@ -171,7 +161,6 @@ small {
   font-family: var(--font-family-paragraph);
   font-size: 12px;
   font-weight: 500;
-  margin: 10px;
   opacity: 0.75;
   padding: 10px 15px;
   text-decoration: none;
@@ -184,33 +173,27 @@ small {
   transition: all 500ms ease-in-out;
 }
 
-.about-container {
+projects-headline .about-container {
   display: flex;
   justify-content: center;
 }
 
 .about-container .row {
   align-items: center;
-  text-align: center;
   margin: 0 100px;
 }
 
-.about-container .col {
-  margin: 0 0 50px 0;
-}
-
-.about-headline {
+.about-headline,
+.projects-headline {
   color: var(--primary-black);
   font-family: var(--font-family-heading);
   font-size: 50px;
   line-height: 0.8;
-  margin-bottom: 25px;
   text-transform: lowercase;
 }
 
 .about-paragraph {
   font-family: var(--font-family-paragraph);
-  margin-bottom: 25px;
   opacity: 0.75;
 }
 
