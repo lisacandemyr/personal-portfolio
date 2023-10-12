@@ -18,7 +18,27 @@ body {
 }
 
 .top-gradient {
-  background: linear-gradient(111.4deg, #f6e7b5 0%, #e1aa54 50%, #c25528 100%);
+  background-image: linear-gradient(
+    111.25deg,
+    #ffffeb 0%,
+    #f6e7b5 25%,
+    #e1aa54 50%,
+    #c25528 100%
+  );
+  background-size: 150%;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .logo {
