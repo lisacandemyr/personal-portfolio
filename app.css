@@ -26,19 +26,36 @@ body {
     #c25528 100%
   );
   background-size: 150%;
-  animation: gradientAnimation 20s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 10px;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.top-space {
+  padding: 10px;
+}
+
+.buttons {
+  background: var(--primary-black);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  color: var(--primary-white);
+  font-family: var(--font-family-paragraph);
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.75;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.navbar {
+  margin: 5px 50px;
 }
 
 .logo {
@@ -74,11 +91,11 @@ body {
   transition: all 500ms ease-in-out;
 }
 
-.about-nav-link {
+.second-nav-link {
   color: var(--primary-black);
 }
 
-.about-nav-link:hover {
+.second-nav-link:hover {
   color: var(--primary-black);
 }
 
@@ -90,21 +107,18 @@ main {
   color: var(--primary-white);
   font-family: var(--font-family-sub-heading);
   font-size: 30px;
+  margin: 0 25px 15px 0;
+  text-align: center;
   text-transform: lowercase;
 }
 
-.main-description,
-.contact-headline {
+.main-description {
   color: var(--primary-white);
   font-family: var(--font-family-heading);
   font-size: 75px;
   line-height: 0.8;
+  text-align: center;
   text-transform: lowercase;
-}
-
-.main-headline:hover,
-.main-description:hover {
-  cursor: context-menu;
 }
 
 span {
@@ -118,6 +132,7 @@ small {
 .code-container {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 
 .code-container .row {
@@ -129,107 +144,88 @@ small {
 }
 
 .code-container i:hover {
-  cursor: pointer;
+  cursor: context-menu;
   transform: scale(1.5);
   transition: all 500ms ease-in-out;
-}
-
-.preview-container,
-.projects-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .previews-headline {
   font-family: var(--font-family-sub-heading);
   font-size: 30px;
-  padding: 10px;
+  padding-bottom: 10px;
+  text-align: center;
   text-transform: lowercase;
 }
 
-.preview-container .row,
-.projects-container .row {
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview-container .row {
   gap: 50px;
+  text-align: center;
 }
 
-.preview-image {
-  max-width: 400px;
-  max-height: 200px;
+.preview-container .col-lg {
+  min-width: 400px;
 }
 
-.project-image {
-  max-width: 300px;
-  box-shadow: var(--box-shadow);
-}
-
-.project-image:hover {
-  transform: scale(1.3);
-  transition: all 500ms ease-in-out;
-}
-
-.preview-headline,
-.project-headline,
-.contact-description {
+.preview-headline {
   font-family: var(--font-family-paragraph);
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.preview-paragraph,
-.project-paragraph,
-.contact-paragraph {
+.preview-paragraph {
   font-family: var(--font-family-paragraph);
-}
-
-.buttons {
-  background: var(--primary-black);
-  border-radius: 5px;
-  box-shadow: var(--box-shadow);
-  color: var(--primary-white);
-  font-family: var(--font-family-paragraph);
-  font-size: 12px;
-  font-weight: 500;
   opacity: 0.75;
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-.buttons:hover {
-  cursor: pointer;
+.preview-paragraph:hover {
+  cursor: context-menu;
   opacity: 1;
+  transform: scale(1.015);
   transition: all 500ms ease-in-out;
+}
+
+.preview-image {
+  margin: 20px;
+  max-height: 200px;
+  max-width: 400px;
 }
 
 .about-container {
   display: flex;
   justify-content: center;
+  margin-top: 135px;
 }
 
 .about-container .row {
   align-items: center;
   margin: 0 100px;
+  text-align: center;
 }
 
-.about-headline,
-.projects-headline {
+.about-headline {
   color: var(--primary-black);
   font-family: var(--font-family-heading);
   font-size: 50px;
   line-height: 0.8;
+  margin-bottom: 20px;
+  text-align: center;
   text-transform: lowercase;
 }
 
-.about-paragraph,
-.project-paragraph {
+.about-paragraph {
   font-family: var(--font-family-paragraph);
+  margin-bottom: 20px;
   opacity: 0.75;
 }
 
-.about-paragraph:hover,
-.project-paragraph:hover {
+.about-paragraph:hover {
   cursor: context-menu;
   opacity: 1;
   transform: scale(1.015);
@@ -242,30 +238,111 @@ small {
   max-width: 325px;
 }
 
-.contact-container i {
-  font-size: 40px;
+.projects-headline {
+  color: var(--primary-black);
+  font-family: var(--font-family-heading);
+  font-size: 50px;
+  line-height: 0.8;
+  margin: 135px 20px 0 20px;
+  text-transform: lowercase;
+  text-align: center;
 }
 
-.contact-container i:hover {
-  cursor: pointer;
-  transform: scale(1.5);
-  transition: all 500ms ease-in-out;
-}
-
-.contact-container {
+.projects-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.contact-container .row {
-  align-items: center;
+.projects-container .row {
+  gap: 50px;
+  margin: 15px;
   text-align: center;
-  gap: 100px;
 }
 
-.contact-container a {
-  text-decoration: none;
+.project-image {
+  box-shadow: var(--box-shadow);
+  margin: 20px;
+  max-width: 300px;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out;
+}
+
+.project-headline {
+  font-family: var(--font-family-paragraph);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-paragraph {
+  font-family: var(--font-family-paragraph);
+  opacity: 0.75;
+}
+
+.project-paragraph:hover {
+  cursor: context-menu;
+  opacity: 1;
+  transform: scale(1.015);
+  transition: all 500ms ease-in-out;
+}
+
+.contact-headline {
+  color: var(--primary-white);
+  font-family: var(--font-family-heading);
+  font-size: 75px;
+  line-height: 0.8;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0 50px 0;
+}
+
+.footer-container .row {
+  align-items: center;
+  gap: 80px;
+}
+
+.footer-headline {
   color: var(--primary-black);
+  font-family: var(--font-family-heading);
+  margin-right: 25px;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.footer-paragraph {
+  font-family: var(--font-family-paragraph);
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.75;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: var(--primary-black);
+  font-size: 30px;
+  margin: 10px;
+}
+
+footer .socials {
+  position: relative;
+  top: 7px;
+}
+
+footer i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 500ms ease-in-out;
 }
 
 @media (max-width: 1150px) {
@@ -280,7 +357,7 @@ small {
     margin-top: 20px;
   }
 
-  .main-about {
+  .about-container {
     margin: 25px 0;
   }
 
@@ -288,8 +365,8 @@ small {
     flex-direction: column-reverse;
   }
 
-  .contact-container .row {
-    gap: 0px;
+  .profile-image {
+    margin-bottom: 30px;
   }
 }
 
@@ -297,6 +374,28 @@ small {
   .main-description,
   .contact-headline {
     font-size: 55px;
+  }
+
+  .previews-headline {
+    font-size: 25px;
+    margin-top: -50px;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-container .row {
+    gap: 5px;
+  }
+
+  .footer-headline {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footer-paragraph {
+    text-align: center;
   }
 }
 
@@ -318,5 +417,55 @@ small {
 
   small {
     font-size: 25px;
+  }
+
+  .previews-headline {
+    font-size: 20px;
+  }
+
+  .preview-image {
+    margin: 20px;
+    max-height: 200px;
+    max-width: 250px;
+  }
+
+  .preview-container .col-lg {
+    min-width: 300px;
+  }
+
+  .project-image {
+    margin: 0 0 10px 0;
+    max-width: 250px;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-description,
+  .contact-headline {
+    font-size: 25px;
+  }
+
+  .previews-headline {
+    font-size: 15px;
+  }
+
+  .projects-headline {
+    font-size: 40px;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
