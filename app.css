@@ -23,9 +23,10 @@ body {
     #ffffeb 0%,
     #f6e7b5 25%,
     #e1aa54 50%,
-    #c25528 100%
+    #c25528 75%,
+    #A3221B 100%
   );
-  background-size: 150%;
+  background-size: 175%;
   animation: gradientAnimation 10s ease infinite;
   padding: 10px;
 }
@@ -290,6 +291,45 @@ small {
   transition: all 500ms ease-in-out;
 }
 
+.photography-headline {
+  color: var(--primary-black);
+  font-family: var(--font-family-heading);
+  font-size: 50px;
+  line-height: 0.8;
+  margin: 135px 20px 20px 20px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.photography-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photography-container .row {
+  gap: 10px
+  text-align: center;
+}
+
+.card {
+  background: var(--primary-white);
+  border-style: none;
+  box-shadow: var(--box-shadow);
+  margin: 20px;
+  max-width: 300px;
+  padding: 10px;
+  text-align: center;
+  max-width: 18rem;
+  min-width: 11rem;
+}
+
+.card-title {
+  font-family: var(--font-family-sub-heading);
+  margin: 5px 0 15px 0;
+  text-align: center;
+  text-transform: lowercase;
+}
+
 .contact-headline {
   color: var(--primary-white);
   font-family: var(--font-family-heading);
@@ -349,6 +389,10 @@ footer i:hover {
   .about-headline {
     font-size: 40px;
   }
+
+  .card-title {
+  font-size: 14px;
+}
 }
 
 @media (max-width: 991.5px) {
@@ -368,6 +412,10 @@ footer i:hover {
   .profile-image {
     margin-bottom: 30px;
   }
+
+  .photography-container {
+  margin: 0 100px;
+}
 }
 
 @media (max-width: 771.5px) {
@@ -438,6 +486,10 @@ footer i:hover {
     max-width: 250px;
   }
 
+  .photography-headline {
+    font-size: 35px;
+  }
+
   .footer-container {
     justify-content: center;
   }
@@ -453,8 +505,9 @@ footer i:hover {
     font-size: 15px;
   }
 
-  .projects-headline {
-    font-size: 40px;
+  .projects-headline,
+  .photography-headline {
+    font-size: 30px;
   }
 }
 
