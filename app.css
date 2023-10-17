@@ -344,6 +344,22 @@ small {
   width: 100%;
 }
 
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows .row {
+  align-items: center;
+}
+
+.left-arrow {
+  color: var(--primary-black);
+  font-size: 50px;
+  margin: 25px 0 -75px 50px;
+  text-align: left;
+}
+
 .right-arrow {
   color: var(--primary-black);
   font-size: 50px;
@@ -351,7 +367,8 @@ small {
   text-align: right;
 }
 
-.right-arrow:hover {
+.right-arrow:hover,
+.left-arrow:hover {
   cursor: pointer;
   opacity: 1;
   transform: scale(1.015);
