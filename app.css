@@ -1,12 +1,12 @@
 @font-face {
   font-family: Tangerine, serif;
-  src: url("Tangerine.otf");
+  src: url("Tangerine.ttf");
 }
 
 :root {
   --primary-black: #000000;
   --primary-white: #ffffeb;
-  --font-family-heading: "Tangerine", cursive;
+  --font-family-heading: "Tangerine", "DM Serif Display";
   --font-family-sub-heading: "Syne Mono", monospace;
   --font-family-paragraph: "Red Hat Display", sans-serif;
   --box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
