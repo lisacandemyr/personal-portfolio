@@ -234,8 +234,9 @@ small {
 }
 
 .profile-image {
+  background: var(--primary-white);
   border-radius: 50% 50% 0 0;
-  box-shadow: var(--box-shadow);
+  border: 1px solid #d2d2c2;
   max-width: 325px;
   padding: 10px;
 }
@@ -313,8 +314,7 @@ small {
 
 .card {
   background: var(--primary-white);
-  border-style: none;
-  box-shadow: var(--box-shadow);
+  border-style: 1px solid #000;
   margin: 20px;
   max-width: 300px;
   padding: 10px;
