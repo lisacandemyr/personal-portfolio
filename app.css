@@ -455,6 +455,14 @@ footer .fa-arrow-right-long:hover {
   transform: none;
 }
 
+.credit {
+  font-family: var(--font-family-paragraph);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1150px) {
   .about-headline {
     font-size: 40px;
