@@ -150,54 +150,6 @@ small {
   transition: all 500ms ease-in-out;
 }
 
-.previews-headline {
-  font-family: var(--font-family-sub-heading);
-  font-size: 30px;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.preview-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.preview-container .row {
-  gap: 50px;
-  text-align: center;
-}
-
-.preview-container .col-lg {
-  min-width: 400px;
-}
-
-.preview-headline {
-  font-family: var(--font-family-paragraph);
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.preview-paragraph {
-  font-family: var(--font-family-paragraph);
-  opacity: 0.75;
-}
-
-.preview-paragraph:hover {
-  cursor: context-menu;
-  opacity: 1;
-  transform: scale(1.015);
-  transition: all 500ms ease-in-out;
-}
-
-.preview-image {
-  margin: 20px;
-  max-height: 200px;
-  max-width: 400px;
-}
-
 .about-container {
   display: flex;
   justify-content: center;
@@ -258,8 +210,7 @@ small {
 }
 
 .projects-container .row {
-  gap: 50px;
-  margin: 15px;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -459,8 +410,21 @@ footer .fa-arrow-right-long:hover {
   font-family: var(--font-family-paragraph);
   font-size: 12px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 5px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.credit a {
+  margin: 0;
+}
+
+.github-link {
+  font-family: var(--font-family-paragraph);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (max-width: 1150px) {
@@ -502,11 +466,6 @@ footer .fa-arrow-right-long:hover {
     font-size: 55px;
   }
 
-  .previews-headline {
-    font-size: 25px;
-    margin-top: -50px;
-  }
-
   .footer-container {
     text-align: center;
   }
@@ -545,20 +504,6 @@ footer .fa-arrow-right-long:hover {
     font-size: 25px;
   }
 
-  .previews-headline {
-    font-size: 18px;
-  }
-
-  .preview-image {
-    margin: 20px;
-    max-height: 200px;
-    max-width: 250px;
-  }
-
-  .preview-container .col-lg {
-    min-width: 300px;
-  }
-
   .project-image {
     margin: 0 0 10px 0;
     max-width: 250px;
@@ -581,10 +526,6 @@ footer .fa-arrow-right-long:hover {
   .main-description,
   .contact-headline {
     font-size: 30px;
-  }
-
-  .previews-headline {
-    font-size: 15px;
   }
 
   .projects-headline,
