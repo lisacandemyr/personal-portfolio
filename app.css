@@ -460,7 +460,7 @@ footer .fa-arrow-right-long:hover {
   }
 }
 
-@media (max-width: 771.5px) {
+@media (max-width: 775px) {
   .main-description,
   .contact-headline {
     font-size: 55px;
@@ -484,6 +484,13 @@ footer .fa-arrow-right-long:hover {
   }
 }
 
+@media (max-width: 767.5px) {
+  .credit {
+    position: relative;
+    top: -60px;
+  }
+}
+
 @media (max-width: 695px) {
   .about-headline {
     font-size: 30px;
@@ -497,7 +504,7 @@ footer .fa-arrow-right-long:hover {
 
   .main-description,
   .contact-headline {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   small {
@@ -515,6 +522,23 @@ footer .fa-arrow-right-long:hover {
 
   .footer-container {
     justify-content: center;
+  }
+}
+
+@media (max-width: 491px) {
+  .main-description,
+  .contact-headline {
+    font-size: 35px;
+  }
+
+  .credit {
+    font-size: 9px;
+    position: relative;
+    top: -80px;
+  }
+
+  .credit a {
+    font-size: 9px;
   }
 }
 
